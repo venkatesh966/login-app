@@ -1,0 +1,32 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">data Entry Form : </div>
+  <div class="panel-body">
+  <form class="form-horizontal" (submit)="validatedata()">
+  <div class="form-group">
+    <label for="emp_name" class="col-sm-2 control-label">Email id : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.emailid" name="emailid" >
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">Password: </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.password" name="password">
+    </div>
+  </div>
+  
+  
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-success">Save</button>
+      
+    </div>
+   
+  </div>
+</form>
+
+  </div>
+</div>

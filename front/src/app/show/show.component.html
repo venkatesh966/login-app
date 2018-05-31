@@ -1,0 +1,57 @@
+
+
+
+<!--
+  <form class="form-horizontal" (submit)="validatedata()">
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">Emailid:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="modell.emailid" name="emailid" >
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">Password: </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="modell.password" name="password">
+    </div>
+  </div>
+  
+  
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-success">Login</button>
+      <button class="btn btn-primary" [routerLink]="['/add']">Register</button>
+    </div>
+    </div>
+   
+
+</form>-->
+
+<div class="app-content" >
+
+<div class="group">
+
+  <form role="form" style="width:290px" (submit)="validatedata()"><br>
+    <h1>Details</h1>
+    
+      <input type="text" required [(ngModel)]="modell.emailid" id="username" name="emailid" >
+      
+       Emailid
+  
+    <br><br>
+    
+      <input  type="password" required [(ngModel)]="modell.password" id="password" name="password" >
+      
+        Password
+      
+    <br><br>
+    <button class="btn btn-primary" type="submit" name="action">LOGIN</button><br><br>
+    <button class="btn btn-primary" style="position:absolute;top:323px;left:637px" [routerLink]="['/add']">Register</button>
+  </form >
+</div>
+</div>
+
+
+ 
