@@ -10,6 +10,7 @@ import { ShowComponent } from './show/show.component';
 import { AddComponent } from './add/add.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { WeatherComponent } from './weather/weather.component';
+import { WeatherService } from './weather.service';
 
 
 const route:Routes=[
@@ -29,7 +30,7 @@ const route:Routes=[
   imports: [
     BrowserModule,RouterModule.forRoot(route),FormsModule,HttpModule
   ],
-  providers: [MydbService],
+  providers: [MydbService,WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
