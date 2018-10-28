@@ -7,7 +7,7 @@ var cors=require('cors');
 mongoose.connect("mongodb://localhost:27017/login",function(err,res)
 {   
     if(res)
-    console.log("i am connected");
+    console.log("Successfully connected to mongodb");
 })
 
 
@@ -18,5 +18,5 @@ app.use(cors());
 var route=require('./routes.js');
 app.use('/api/mydb',route);
 app.listen(3000,()=>{
-    console.log("I am connected to port 3000")
+    console.log("Connected to port 3000")
 })

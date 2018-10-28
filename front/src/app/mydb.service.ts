@@ -12,7 +12,6 @@ getData(){
   .map(res => res.json());
 }
 addData(info){
-  console.log("i am in service file")
   return this.http.post("http://localhost:3000/api/mydb",info)
   .map(res => res.json());
 }

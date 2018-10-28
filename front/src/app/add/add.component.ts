@@ -19,26 +19,21 @@ export class AddComponent implements OnInit {
   display(){
     this.mydb.getData().subscribe(array=>{
       this.modell=array;
-      console.log(this.modell);
     })
 
   }
   validatedata()
   {
-    console.log(this.modell);
+
     for(var i=0;i<this.modell.length; i++){
       if(this.modell[i].emailid === this.model.emailid)
       {
         this.value=false;
-        console.log("Already this email is present");
         alert("Already this email is present");
-        console.log("I am in for if block loop")
         break;
       }
-      console.log("I am in for loop")
     }
     if(this.value){
-      console.log("I am in adding if block");
       this.addDat();
     
 
@@ -48,7 +43,6 @@ export class AddComponent implements OnInit {
   addDat()
   {
     this.mydb.addData(this.model).subscribe();
-    console.log("i am in adddat method");
     alert("registration happened successfully")
   }
   

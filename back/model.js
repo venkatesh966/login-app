@@ -6,7 +6,6 @@ var login=mongoose.Schema({
     password:String
 
 })
-console.log("I am in model file")
 
 var mydb=module.exports=mongoose.model('mydb',login);
 

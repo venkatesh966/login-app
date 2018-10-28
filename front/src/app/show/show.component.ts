@@ -19,13 +19,12 @@ modell:any=[];
   display(){
     this.mydb.getData().subscribe(array=>{
       this.model=array;
-      console.log(this.model);
     })
 
   }
   validatedata()
   {
-    console.log(this.modell);
+
     for(var i=0;i<this.model.length; i++)
     {
       if(this.model[i].emailid === this.modell.emailid)

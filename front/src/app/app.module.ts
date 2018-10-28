@@ -9,6 +9,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ShowComponent } from './show/show.component';
 import { AddComponent } from './add/add.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { WeatherComponent } from './weather/weather.component';
 
 
 const route:Routes=[
@@ -16,13 +17,14 @@ const route:Routes=[
   {path:'show',component:ShowComponent},
   {path:'add',component:AddComponent},
   {path:'login',component:LoginpageComponent},
+  {path:'weather',component:WeatherComponent},
  
 
 ]
 
 @NgModule({
   declarations: [
-    AppComponent,WelcomeComponent, ShowComponent, AddComponent, LoginpageComponent
+    AppComponent,WelcomeComponent, ShowComponent, AddComponent, LoginpageComponent, WeatherComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(route),FormsModule,HttpModule
