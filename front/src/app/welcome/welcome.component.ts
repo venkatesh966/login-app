@@ -21,10 +21,6 @@ export class WelcomeComponent implements OnInit {
       })
   
     }
-    vaildatedata()
-    {
-      
-    }
   
     ngOnInit() {
       this.display();
