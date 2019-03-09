@@ -33,8 +33,6 @@ modell:any=[];
         {
         this.value=false;
         alert("login happened successfully");
-        sessionStorage.setItem("user", this.modell.emailid);
-        
         
         this._router.navigate(['/login']);
         break;
